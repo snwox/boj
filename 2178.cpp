@@ -19,28 +19,24 @@ void BFS(int x,int y, int c){
 		}
 		if(map[cx-1][cy]){
 			if(!chk[cx-1][cy]){
-			// if (cx-1 < 1 || cx-1 > N || cy < 1 || cy > M) continue;
 			q.push(pair<int,int>(cx-1,cy));
 			chk[cx-1][cy]=chk[cx][cy]+1;
 			}
 		}
 		if(map[cx+1][cy]){
 			if(!chk[cx+1][cy]){
-			// if (cx+1 < 1 || cx+1 > N || cy < 1 || cy > M) continue;
 			q.push(pair<int,int>(cx+1,cy));
 			chk[cx+1][cy]=chk[cx][cy]+1;
 			}
 		}
 		if(map[cx][cy+1]){
 			if(!chk[cx][cy+1]){
-			// if (cx < 1 || cx > N || cy+1 < 1 || cy+1 > M) continue;
 			q.push(pair<int,int>(cx,cy+1));
 			chk[cx][cy+1]=chk[cx][cy]+1;
 			}
 		}
 		if(map[cx][cy-1]){
 			if(!chk[cx][cy-1]){
-			// if (cx < 1 || cx > N || cy-1 < 1 || cy-1 > M) continue;
 			q.push(pair<int,int>(cx,cy-1));
 			chk[cx][cy-1]=chk[cx][cy]+1;
 			}
