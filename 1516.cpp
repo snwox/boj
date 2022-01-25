@@ -18,10 +18,6 @@ int main(void){
             cin >> a;
         }
     }
-<<<<<<< HEAD
-}
-
-=======
     for(int i=1;i<=N;i++){
         if(in_deg[i]==0)q.push(i);
         ans[i]=times[i];
@@ -39,4 +35,3 @@ int main(void){
         cout << ans[i] << '\n';
     }
 }
->>>>>>> 5ad10a28e000d52e2db253e56cd4348440ad847e
