@@ -1,12 +1,14 @@
 #include<iostream>
 #include<string>
 using namespace std;
-int queue[10010];
+int queue[2000001];
 int front;
 int rear;
 
 int main(){
 	int N;
+	ios::sync_with_stdio(0);
+	cin.tie(0);
 	string input;
 	int num;
 	cin >> N ;
